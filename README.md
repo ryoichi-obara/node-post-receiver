@@ -13,10 +13,15 @@ git clone git@github.com:ryoichi-obara/node-post-receiver.git
 cd node-post-receiver
 
 npm install
-node index.js
 ```
 
 ## Usage
+
+```command
+node index.js
+```
+
+## Test
 
 ```command
 curl -H 'Accept: application/json' -H "Content-type: application/json" -H 'X-Node-Post-Receiver-Token: foobar' -d '{"jsonData":[{"category":"sample","count":1,"debug":true}]}' http://localhost:3000/
