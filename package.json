@@ -1,0 +1,13 @@
+{
+  "name": "node-post-receiver",
+  "version": "1.0.0",
+  "description": "Receives POST request and save data to file.",
+  "main": "index.js",
+  "author": "ryoichi-obara",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4",
+    "body-parser": "^1.18.0",
+    "moment": "^2.18.1"
+  }
+}
