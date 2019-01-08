@@ -24,5 +24,5 @@ node index.js
 ## Test
 
 ```command
-curl -H 'Accept: application/json' -H "Content-type: application/json" -H 'X-Node-Post-Receiver-Token: foobar' -d '{"jsonData":[{"category":"sample","count":1,"debug":true}]}' http://localhost:3000/
+curl -H 'Accept: application/json' -H "Content-type: application/json" -H 'X-Node-Post-Receiver-Token: foobar' -d '{"jsonData":[{"category":"sample","count":1,"debug":true}]}' http://localhost/
 ```
