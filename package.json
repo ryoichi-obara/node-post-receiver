@@ -6,8 +6,8 @@
   "author": "ryoichi-obara",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.15.4",
-    "body-parser": "^1.18.0",
-    "moment": "^2.18.1"
+    "express": "^4.16.4",
+    "body-parser": "^1.18.3",
+    "moment": "^2.23.0"
   }
 }
