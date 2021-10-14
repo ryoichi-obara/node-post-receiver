@@ -2,10 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const moment = require('moment');
 const fs = require('fs');
-const { promisify } =  require('util');
+const { promisify } = require('util');
 
 const fileOutputDestination = 'app.log';
-const portNo = 80;
+const portNo = 5000;
 
 const app = express();
 
@@ -31,5 +31,16 @@ app.post('/', async (req, res) => {
   res.send('200 OK');
 });
 
-app.listen(portNo);
-console.log(`Ready, waiting connection on ${portNo}.`);
+app.listen(portNo, (err) => {
+  if (err) {
+    console.log(err);
+  }
+
+  console.log(`Ready, waiting connection on ${portNo}.`);
+});
+
+// promise error
+process.on('unhandledRejection', reason => {
+  console.log(reason);
+  process.exit(0);
+});
