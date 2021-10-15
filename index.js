@@ -5,7 +5,7 @@ const fs = require('fs');
 const { promisify } = require('util');
 
 const fileOutputDestination = 'app.log';
-const portNo = 5000;
+const portNo = 80;
 
 const app = express();
 
